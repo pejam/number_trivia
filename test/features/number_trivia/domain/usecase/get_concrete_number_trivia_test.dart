@@ -28,7 +28,7 @@ void main() {
       return Right(tNumberTrivia);
     });
     // act
-    final result = await usecase!.execute(number: tNumber);
+    final result = await usecase!(tNumber);
 
     // assert
     expect(result, Right(tNumberTrivia));
